@@ -2,7 +2,7 @@
 /* eslint-disable react/no-did-update-set-state */
 /* eslint-disable react/prop-types */
 import React from 'react';
-import { Select, Table } from 'antd';
+import { Select, Table, Spin } from 'antd';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
@@ -56,7 +56,7 @@ class BestStreaks extends React.Component {
     const { dataBestStreaks, isReady, yearBestStreaks } = this.state;
     const { dataYears } = this.props;
 
-    if (!isReady || !dataBestStreaks) return null;
+    if (!isReady || !dataBestStreaks)  return <Spin />;
 
     const yearBestStreaksHandler = k => {
       this.setState({ yearBestStreaks: k });

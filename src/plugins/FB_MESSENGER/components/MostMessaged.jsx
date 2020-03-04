@@ -2,7 +2,7 @@
 /* eslint-disable react/no-did-update-set-state */
 /* eslint-disable react/prop-types */
 import React from 'react';
-import { Table, Select } from 'antd';
+import { Table, Select, Spin } from 'antd';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
@@ -49,7 +49,7 @@ class MostMessaged extends React.Component {
     const { dataMostMessaged, isReady, yearMostMessaged } = this.state;
     const { dataYears } = this.props;
 
-    if (!isReady || !dataMostMessaged) return null;
+    if (!isReady || !dataMostMessaged) return <Spin />;
 
     const yearMostMessagedHandler = k => {
       this.setState({ yearMostMessaged: k });

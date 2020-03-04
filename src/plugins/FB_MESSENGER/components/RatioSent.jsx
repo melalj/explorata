@@ -2,7 +2,7 @@
 /* eslint-disable react/no-did-update-set-state */
 /* eslint-disable react/prop-types */
 import React from 'react';
-import { Table, Select } from 'antd';
+import { Table, Select, Spin } from 'antd';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
@@ -59,7 +59,7 @@ class RatioSent extends React.Component {
     const { dataRatioSent, isReady, yearRatioSent, typeRatioSent } = this.state;
     const { dataYears, isGhosters } = this.props;
 
-    if (!isReady || !dataRatioSent) return null;
+    if (!isReady || !dataRatioSent) return <Spin />;
 
     const yearRatioSentHandler = k => {
       this.setState({ yearRatioSent: k });
