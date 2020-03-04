@@ -67,13 +67,44 @@ h2 {
 }
 
 .disclaimer {
-  text-align: center;
-  margin-top: 30px;
-  font-size: 0.75em;
+  text-align: left;
+  margin: 30px auto;
+  padding-left: 15px;
+  border-left: 5px solid #8f00ff;
+  width: 650px;
+  font-size: 1em;
+  color: #BDBDBD;
 }
 
-.ant-list-item-meta-title > a {
+.disclaimer strong {
   color: #8f00ff;
+}
+
+.disclaimer a {
+  color: #BDBDBD;
+  text-decoration: underline;
+}
+
+.logo {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.logo .dot{
+  font-size: 1.25em;
+  color: #8f00ff;
+}
+
+.footer {
+  text-align:center;
+  font-size: 0.75em;
+  color: #BDBDBD;
+  margin: 20px 0;
+}
+
+.footer a {
+  color: #BDBDBD;
+  text-decoration: underline;
 }
 
 .ant-tabs .ant-tabs-tab {
@@ -116,7 +147,7 @@ button,
   outline: none;
   transition: all 0.24s ease-in-out;
   margin-top: 20px;
-  height: 500px;
+  height: 250px;
   cursor: pointer;
 }
 
