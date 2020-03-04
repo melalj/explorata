@@ -1,5 +1,7 @@
 # Explorata
 
+[![Build Status](https://travis-ci.org/melalj/explorata.svg?branch=master)](https://travis-ci.org/melalj/explorata)
+
 ## What is it?
 
 Explore your Facebook Messenger data with fun and meaningful visualisations. 
